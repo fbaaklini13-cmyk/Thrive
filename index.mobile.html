@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thrive · Train. Fuel. Recover.</title>
+  <meta name="description" content="Thrive — your AI health & fitness copilot. Scan your body, log meals, plan workouts, chat with your AI coach, and discover personalized recipes." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-mobile">
+  <!-- Header / Nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <!-- Updated logo path to reference the correct file location. -->
+        <img src="thrive-logo.png" alt="Thrive logo" />
+        <span>Thrive</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+        <div id="formStatus" class="form-status" aria-live="polite" style="margin-top:8px;"></div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#scanner">Body Scanner</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn--small" href="#download">Get the App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="reveal-up">Your AI health & fitness copilot.</h1>
+        <p class="muted reveal-up" style="--d:0.05s">
+          Scan your body, log your meals, plan workouts, and chat with your AI coach — all in one clean, powerful app.
+        </p>
+        <div class="hero-cta reveal-up" style="--d:0.1s">
+          <a href="#pricing" class="btn">Try Premium</a>
+          <a href="#features" class="btn btn--ghost">See how it works</a>
+        </div>
+        <div class="metrics reveal-up" style="--d:0.15s">
+          <div><strong>AI</strong><span>body scanner</span></div>
+          <div><strong>P/F/C</strong><span>macro breakdown</span></div>
+          <div><strong>24/7</strong><span>AI coach</span></div>
+        </div>
+        <small class="footnote reveal-up" style="--d:0.2s">*From early beta testers over 8 weeks.</small>
+      </div>
+      <div class="hero-card reveal-up" style="--d:0.1s">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-head">
+              <!-- Use correct logo path for phone screen header -->
+              <img src="thrive-logo.png" alt="Thrive" />
+              <span>Body Scan</span>
+            </div>
+            <div class="scan-visual">
+              <div class="scan-ring"></div>
+              <div class="scan-ring r2"></div>
+              <div class="scan-ring r3"></div>
+              <div class="scan-dot"></div>
+            </div>
+            <div class="scan-stats">
+              <div><span class="stat">14.9%</span><label>Body Fat</label></div>
+              <div><span class="stat">Balanced</span><label>Muscle</label></div>
+              <div><span class="stat">Good</span><label>Posture</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature grid -->
+  <section id="features" class="section container">
+    <header class="section-head">
+      <h2 class="reveal-up">Everything you need to track, train, and thrive.</h2>
+      <p class="muted reveal-up" style="--d:0.05s">Built for results. Designed to be simple.</p>
+    </header>
+
+    <div class="grid">
+      <article class="card reveal-up">
+        <h3>Calorie &amp; BMI Tracker</h3>
+        <p>Easily track your daily calories and monitor your BMI to stay on top of your goals.</p>
+      </article>
+      <article class="card reveal-up" style="--d:0.05s">
+        <h3>Meal &amp; Photo Logging</h3>
+        <p>Snap photos and log your meals in seconds for seamless tracking and accountability.</p>
+      </article>
+      <article class="card reveal-up" style="--d:0.1s">
+        <h3>Workout Planner &amp; AI Coach</h3>
+        <p>Build custom routines, log sets and weights, and get guidance from your AI assistant.</p>
+      </article>
+      <article class="card reveal-up" style="--d:0.15s">
+        <h3>Macros &amp; Recipe Generator</h3>
+        <p>Break down protein, fats and carbs in every meal and discover recipes tailored to your needs.</p>
+      </article>
+      <article class="card reveal-up" style="--d:0.2s">
+        <h3>AI Body Scanner</h3>
+        <p>Scan your body to estimate body fat %, muscle balance and posture — track changes precisely.</p>
+        <a href="#scanner" class="link">How the scanner works →</a>
+      </article>
+      </div>
+  </section>
+
+  <!-- Scanner explainer -->
+  <section id="scanner" class="section alt">
+    <div class="container">
+      <div class="two-col">
+        <div class="col reveal-up">
+          <h2>Camera‑based body scanning, no hardware needed.</h2>
+          <ul class="checklist">
+            <li>Single‑camera scan with guided poses.</li>
+            <li>Estimates body fat %, muscle balance, and posture.</li>
+            <li>Private on‑device processing when supported.</li>
+            <li>Progress overlays and weekly trend reports.</li>
+          </ul>
+          <div class="cta-row">
+            <a href="#pricing" class="btn">Unlock with Premium</a>
+            <button class="btn btn--ghost" data-demo-scan>See demo</button>
+        <div id="formStatus" class="form-status" aria-live="polite" style="margin-top:8px;"></div>
+          </div>
+        </div>
+        <div class="col reveal-up" style="--d:0.05s">
+          <div class="scanner-card">
+            <div class="scanner-grid">
+              <div class="scanner-cell"></div>
+              <div class="scanner-cell"></div>
+              <div class="scanner-cell"></div>
+              <div class="scanner-cell"></div>
+            </div>
+            <div class="scanner-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section container">
+    <header class="section-head">
+      <h2 class="reveal-up">Simple pricing</h2>
+      <p class="muted reveal-up" style="--d:0.05s">Start free. Upgrade anytime.</p>
+    </header>
+
+    <div class="pricing">
+      <div class="plan reveal-up">
+        <div class="plan-head">
+          <h3>Thrive Basic</h3>
+          <p class="muted">Free forever</p>
+        </div>
+        <ul class="plan-features">
+          <li>Calorie tracker</li>
+          <li>BMI calculator</li>
+          <li>Meal &amp; photo tracker</li>
+          <li>Workout planner &amp; logging</li>
+          <li>AI assistant coach</li>
+        </ul>
+        <a href="#download" class="btn btn--ghost">Get Free</a>
+      </div>
+
+      <div class="plan plan--highlight reveal-up" style="--d:0.05s">
+        <div class="plan-tag">Most Popular</div>
+        <div class="plan-head">
+          <h3>Thrive Premium</h3>
+          <div class="price"><span>$4.99</span><small>/mo</small></div>
+        </div>
+        <ul class="plan-features">
+          <li>Includes all Basic features</li>
+          <li>AI Body Scanner</li>
+          
+          <li>Macros breakdown</li>
+          <li>Recipe generator</li>
+        </ul>
+        <a href="#download" class="btn">Start Premium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="reveal-up">FAQ</h2>
+        <p class="muted reveal-up" style="--d:0.05s">Quick answers to common questions.</p>
+      </header>
+      <div class="accordion">
+        <details class="reveal-up">
+          <summary>Does the body scanner need special hardware?</summary>
+          <p>No. Thrive uses your phone camera with guided poses. Some devices support on‑device processing for privacy.</p>
+        </details>
+        <details class="reveal-up" style="--d:0.05s">
+          <summary>Can I switch between Basic and Premium?</summary>
+          <p>Yes — upgrade or downgrade anytime. Your data stays with you.</p>
+        </details>
+        <details class="reveal-up" style="--d:0.1s">
+          <summary>Is my health data secure?</summary>
+          <p>We encrypt data in transit and at rest. Camera scans can be processed locally when supported.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download / CTA -->
+  <section id="download" class="section container">
+    <div class="cta reveal-up">
+      <h2>Ready to Thrive?</h2>
+      <p class="muted">Join the waitlist — get <strong>2 months of Premium free</strong> at launch.</p>
+      <form id="thrive-form" name="thrive-waitlist" class="waitlist web3form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Public access key for Web3Forms -->
+        <input type="hidden" name="access_key" value="5a3202ba-aa03-4209-b031-9d49dc2fc860">
+        <!-- Optional: identify your form submissions -->
+        <input type="hidden" name="from_name" value="Thrive Waitlist">
+        <input type="hidden" name="subject" value="New Thrive waitlist signup">
+        <input type="hidden" name="redirect" value="thankyou.html">
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <div class="phone-wrap">
+  <label class="visually-hidden" for="countryCode">Country code</label>
+  <select id="countryCode" class="phone-select" aria-label="Country code"></select>
+  <input type="tel" id="phoneLocal" class="phone-input" placeholder="81234567" inputmode="numeric" pattern="\d{4,15}" required />
+  <input type="hidden" name="phone" id="phoneE164" value="">
+</div>
+        <button class="btn" type="submit">Join the waitlist</button>
+        <div id="formStatus" class="form-status" aria-live="polite" style="margin-top:8px;"></div>
+      <input type="hidden" name="recipient" value="thrive.1.0.3.0@gmail.com">
+<input type="hidden" name="botcheck" value="">
+</form>
+      <small class="muted">No spam. Unsubscribe any time.</small>
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">
+        <img src="thrive-logo.png" alt="Thrive logo" />
+        <span>Thrive</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><button class="support-link" id="openSupport" type="button">Support</button>
+        <div id="formStatus" class="form-status" aria-live="polite" style="margin-top:8px;"></div></li>
+      </ul>
+      <p class="muted">© 2025 Thrive. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- Our main JavaScript file.  -->
+  <script src="script.js"></script>
+
+<div class="modal-overlay" id="supportOverlay" hidden></div>
+<div class="modal" id="supportModal" role="dialog" aria-modal="true" aria-labelledby="supportTitle" hidden>
+  <div class="modal-header">
+    <h3 id="supportTitle">Support</h3>
+    <button class="modal-close" id="closeSupport" aria-label="Close support dialog" type="button">&times;</button>
+        <div id="formStatus" class="form-status" aria-live="polite" style="margin-top:8px;"></div>
+  </div>
+  <div class="modal-body">
+    <p>Need help? Contact us:</p>
+    <p><strong>Email:</strong> <a href="mailto:thrive.1.0.3.0@gmail.com">thrive.1.0.3.0@gmail.com</a></p>
+    <p><strong>Phone / WhatsApp:</strong> <a href="tel:+96181082562">+961 81082562</a></p>
+  
+    <p><strong>Chat on WhatsApp:</strong> <a href="https://wa.me/96181082562" target="_blank">Message us</a></p>
+
+  </div>
+</div>
+
+
+<script id="web3forms-handler.js">
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("form.web3form").forEach(function(form) {
+    form.addEventListener("submit", async function(e) { /* disabled preventDefault to allow native submit */ return;
+      if (form.enctype && form.enctype.toLowerCase() === "multipart/form-data") return;
+      if (form.querySelector('input[type="file"]')) return;
+      e.preventDefault();
+      const status = form.querySelector(".form-status") || (()=>{
+        const s = document.createElement("div"); s.className="form-status";
+        s.style.marginTop="8px"; form.appendChild(s); return s;
+      })();
+      status.textContent = "Sending...";
+      const formData = new FormData(form);
+      try {
+        const res = await fetch(form.action || "https://api.web3forms.com/submit", { method: "POST", body: formData });
+        const data = await res.json();
+        if (data && data.success) {
+          status.textContent = "Success! Check your inbox.";
+          form.reset();
+        } else {
+          status.textContent = (data && (data.message || data.error)) || "Submission failed.";
+        }
+      } catch(err) {
+        status.textContent = "Network error. Please try again.";
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

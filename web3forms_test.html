@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Web3Forms Test</title>
+<style>body{font-family:system-ui,Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;}</style>
+</head>
+<body>
+<h1>Web3Forms Test</h1>
+<p>Use this form to test that submissions reach <strong>thinkbotics.1.0.3.0@gmail.com</strong>. You should receive a confirmation/notification email if everything is set correctly.</p>
+<form class="web3form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="5a3202ba-aa03-4209-b031-9d49dc2fc860">
+  <input type="hidden" name="subject" value="New Thrive signup (Test Page)">
+  <input type="hidden" name="from_name" value="Thrive Website">
+  <input type="hidden" name="recipient" value="thinkbotics.1.0.3.0@gmail.com">
+  <input type="hidden" name="botcheck" value="">
+  <label>Name<br><input type="text" name="name" required></label><br><br>
+  <label>Email<br><input type="email" name="email" required></label><br><br>
+  <button type="submit">Send Test</button>
+  <div class="form-status" style="margin-top:8px;"></div>
+</form>
+</body>
+</html>
